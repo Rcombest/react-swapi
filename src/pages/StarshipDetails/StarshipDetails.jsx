@@ -18,12 +18,12 @@ const StarshipDetails = () => {
 
   return ( 
     <>
-      <div>
+      <div className="starship-details-div">
         {starshipDetails.name ? 
         <>
-          <h2>{starshipDetails.name}</h2>
-          <h3>{starshipDetails.model}</h3>
-          <Link to='/all-starships'></Link>
+          <h2 className="starship-name">NAME: {starshipDetails.name}</h2>
+          <h3>MODEL: {starshipDetails.model}</h3>
+          <Link to='/all-starships' className='return'>Return</Link>
         </>
         :
         <>

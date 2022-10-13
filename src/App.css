@@ -37,7 +37,7 @@ body {
 }
 
 .App-header {
-  background-color: #b3ccff;
+  background-color: black;
   min-height: 5vh;
   display: flex;
   flex-direction: row;
@@ -46,6 +46,68 @@ body {
   padding: 30px;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.all-starships {
+  text-decoration: none;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.starship-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "ship ship ship ship";
+    
+}
+
+.starship-name-div {
+  grid-area: ship;
+  padding: 40px 30px;
+  border-radius: 5px;
+  display: grid;
+  background-color: #243F3E;
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+.starship-details-div {
+  margin: 150px 400px;
+  padding: 15px;
+  padding-top: 2px;
+  border-radius: 5px;
+  background-color: #243F3E;
+  text-decoration: none;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 100;
+  text-align: left;
+}
+
+.return {
+  color: white; 
+}
+
+.starship-name {
+  margin-top: 15px;
 }
 
 .App-link {
